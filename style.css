@@ -116,7 +116,6 @@ nav a:hover {
     gap: 5px;
     height: fit-content;
     margin: 50px auto 0 auto;
-    overflow: scroll;
     padding: 20px;
     text-shadow: 0px 0px 10px #a7a7a7;
     width: fit-content;
@@ -160,7 +159,7 @@ nav a:hover {
     gap: 5px;
     height: 60.5vh;
     margin: 50px 0 0 0;
-    overflow: scroll;
+    overflow: auto;
     padding: 5px;
 }
 .small_img img {
