@@ -75,15 +75,15 @@ body{
 
     overflow: auto;
 
-    width: 800px;
+    width: 85vw;
 }
 
-.hero {
-    background-image: url(img/group.jpg);
-
+.hero img {
     border-bottom: 5px solid black;
 
-    height: 450px;
+    height: 100%;
+
+    width: 100%;
 }
 
 .content {
@@ -134,7 +134,7 @@ body{
 
     padding: 20px;
 
-    width: 800px;
+    width: 85vw;
 }
 
 .footer .copyright {
