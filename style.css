@@ -21,7 +21,7 @@ body{
 /* title */
 .title, 
 .title_for_gallery {
-    font-size: 30px;
+    font-size: xx-large;
     font-weight: bolder;
 
     letter-spacing: 10px;
@@ -49,14 +49,14 @@ nav a {
     border-right: 5px solid #07006e;
     border-left: 5px solid #6e0053;
     border-bottom: 5px solid #07006e;
-    font-size: 20px;
+    font-size: small;
     font-weight: bolder;
-    padding: 20px;
+    padding: 10px;
 }
 nav a:hover {
     box-shadow:         
-        5px 5px 10px 5px rgba(0, 110, 255, 0.25),
-        -5px -5px 10px 5px rgba(255, 0, 170, 0.25);
+        5px 5px 10px 0px rgba(0, 110, 255, 0.25),
+        -5px -5px 10px 0px rgba(255, 0, 170, 0.25);
 
     text-shadow: 
         2px 2px 2px rgba(0, 110, 255),
@@ -68,14 +68,8 @@ nav a:hover {
 .body {
     background-color: #dbd2d2;
 
-    border-top: 5px solid #6e0053;
-    border-right: 5px solid #07006e;
-    border-left: 5px solid #6e0053;
-    border-bottom: 5px solid #07006e;
-
-    box-shadow:         
-        5px 5px 10px 5px rgba(0, 110, 255, 0.25),
-        -5px -5px 10px 5px rgba(255, 0, 170, 0.25);
+    box-shadow:  5px 5px 5px 4px rgba(0, 110, 255, 0.3),
+                -5px -5px 5px 4px rgba(255, 0, 170, 0.3);
 
     box-sizing: border-box;
 
@@ -90,8 +84,43 @@ nav a:hover {
     border-bottom: 5px solid black;
 
     height: 100%;
-
+    
     width: 100%;
+}
+
+.hero figcaption {
+    box-sizing: border-box;
+
+    font-size: x-small;
+    
+    margin: 5px 0 0 10px;
+}
+
+.hero .scr_img_hero {
+    color: rgb(0, 129, 19);
+
+    font-style: italic;
+    font-weight: 700;
+}
+
+.hero .img_by_hero {
+    color: rgb(110, 10, 10);
+
+    font-style: italic;
+    font-weight: 700;
+}
+
+.hero figcaption a {
+    color: #0f0f0f;
+
+    font-weight: normal;
+    font-style: normal;
+}
+.hero figcaption a:hover {
+    color: rgb(0, 10, 153);
+
+    font-style: italic;
+    font-weight: 700;
 }
 
 .content {
@@ -103,7 +132,7 @@ nav a:hover {
 }
 
 .content .dsc {
-    font-size: 15px;
+    font-size: medium;
 }
 /* end body */
 
@@ -124,18 +153,13 @@ nav a:hover {
 .big_img,
 .small_img {
     /* background-color: aqua; */
-    box-shadow:         
-        5px 5px 10px 5px rgba(0, 110, 255, 0.25),
-        -5px -5px 10px 5px rgba(255, 0, 170, 0.25);
     box-sizing: border-box;
     width: 85vw;
 }
 
 .big_img {
-    border-top: 5px solid #6e0053;
-    border-right: 5px solid #07006e;
-    border-left: 5px solid #6e0053;
-    border-bottom: 5px solid #07006e;
+    box-shadow:  5px 5px 5px 4px rgba(0, 110, 255, 0.3),
+                -5px -5px 5px 4px rgba(255, 0, 170, 0.3);
 
     height: 90vh;
 }
@@ -151,9 +175,8 @@ nav a:hover {
     border-left: 5px solid #6e0053;
     border-bottom: 5px solid #07006e;
     background-color: #dbd2d2;
-    box-shadow:         
-    5px 5px 10px 5px rgba(0, 110, 255, 0.25),
-    -5px -5px 10px 5px rgba(255, 0, 170, 0.25);
+    box-shadow:  5px 5px 5px 4px rgba(0, 110, 255, 0.3),
+                -5px -5px 5px 4px rgba(255, 0, 170, 0.3);
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 5px;
@@ -181,15 +204,43 @@ nav a:hover {
 
     margin: 50px auto 50px auto;
 
-    padding: 20px;
+    padding: 15px;
+
+    text-align: center;
 
     width: 85vw;
 }
 
+.footer a {
+    height: fit-content;
+
+    margin: 0 10px 0 0;
+
+    width: fit-content;
+}
+.footer a img {
+    filter: grayscale(1);
+
+    height: 30px;
+
+    width: 30px;
+}
+.footer a .git-hub-logo {
+    filter: invert(30%);
+}
+.footer a .git-hub-logo:hover {
+    filter: invert(0%);
+}
+.footer a img:hover {
+    filter: grayscale(0);
+}
+
+
 .footer .copyright {
     font-size: small;
     font-weight: bolder;
-    text-align: center;
+
+    margin: 10px 0 0 0;
 }
 /* end footer */
 
